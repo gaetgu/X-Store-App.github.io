@@ -29,6 +29,7 @@ function About() {
 						</li>
 					</ul>
 					<p>And more at <a href="https://github.com/x-store-app">GitHub.</a></p>
+					<p><i>This website was created by <a href="https://github.com/marc2332">Marc Espín Sanz</a> for Graviton. Check it <a href="https://github.com/Graviton-Code-Editor/website">here.</a></i></p>
 				</div>
 			</HomeLayout>
 		</div>
