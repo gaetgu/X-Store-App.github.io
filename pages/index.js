@@ -18,8 +18,8 @@ function Home() {
 				<div className="container">
 					<div className="horizontal">
 						<div className="right-text"> 
-							<Title>Made for every person in the world, for every PC</Title>
-							<p>XStore is an open source, free and cross-platform code editor</p>
+							<Title>Made for every person in the world</Title>
+							<p>XStore is an open source, free and cross-platform app store</p>
 							<a href="/docs/faq">Any doubt? See the FAQ</a>
 							<a target="_blank" href="https://github.com/X-Store-App/client/releases">
 								<Button>XSTORE DESKTOP</Button>
