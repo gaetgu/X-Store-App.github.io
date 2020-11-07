@@ -6,10 +6,9 @@
 	"author": "dragonDScript",
 	"scripts": {
 		"dev": "next",
-		"build": "npm run dev:tasks && next build",
+		"build": "next build",
 		"postbuild": "next-on-netlify",
 		"build:static": "next build && next export -o dist",
-		"dev:tasks": "gulp",
 		"start": "next start"
 	},
 	"devDependencies": {
