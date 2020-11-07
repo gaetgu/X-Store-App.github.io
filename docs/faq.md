@@ -8,7 +8,7 @@ These are the most asked questions here at XStore. Any questions? [Visit our Dis
 
 - *Can I publish Windows only apps to XStore?*
 
-  Yes, you can do that. But users not from that OS won't be able to download it.
+  Yes, you can do that. But users not from that OS won't be able to download it. [See Wine support blog.](/blog/windows-support-linux)
 
 - *What targets are available?*
   
