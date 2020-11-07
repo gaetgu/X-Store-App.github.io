@@ -7,8 +7,6 @@
 	"scripts": {
 		"dev": "next",
 		"build": "next build",
-		"postbuild": "next-on-netlify",
-		"build:static": "next build && next export -o dist",
 		"start": "next start"
 	},
 	"devDependencies": {
