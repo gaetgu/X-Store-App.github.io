@@ -9,16 +9,13 @@ function Browser() {
 	return (
 		<div>
 			<Head>
-				<title>Graviton Editor</title>
+				<title>XStore Editor</title>
 			</Head>
 			<Navbar/>
 			<HomeLayout>
 				<div className="container">
-					<h3>Graviton Browser</h3>
-					<p>This is still very experimental.</p>
-					<Link href="/app" >
-						<Button noSpacing={true}>I understand</Button>
-					</Link>
+					<h3>XStore on the browser</h3>
+					<p>This is under development now.</p>
 				</div>
 			</HomeLayout>
 		</div>

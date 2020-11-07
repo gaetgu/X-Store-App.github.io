@@ -7,55 +7,28 @@ function About() {
 	return (
 		<div style={{height: '100%'}}>
 			<Head>
-				<title>Graviton Editor</title>
+				<title>XStore App Store</title>
 			</Head>
 			<Navbar/>
 			<HomeLayout>
 				<div style={{padding: 15}}>
 					<h1>About</h1>
-					<p>The <b>Graviton Project</b> is not just a editor. See projects related to it:</p>
+					<p><b>XStore</b> is not just a store. It is a cross platform store, free and open source made by everyone and for everyone. I have made a full ecosystem for all you:</p>
 					<ul style={{
 							listStyleType: 'none',
 							margin: 0,
 							padding: 0
 						}}>
 						<li>
-							<LinkCard is="external" href="https://github.com/Graviton-Code-Editor/store-api">
-								💫 Store's API
+							<LinkCard is="external" href="https://github.com/X-Store-App/backend">
+								XStore backend
 							</LinkCard>
-						</li>
-						<li>
-							<LinkCard is="external" href="https://github.com/PuffinJS/puffin">
-								🐧 PuffinJS
-							</LinkCard>
-						</li>
-						<li>
-							<LinkCard is="external" href="https://github.com/Graviton-Code-Editor/drac">
-								💅🏻 Drac Design System
-							</LinkCard>
-						</li>
-						<li>
-							<LinkCard is="external" href="https://github.com/marc2332/lsp-codemirror">
-								📐 LSP-CodeMirror
-							</LinkCard>
-						</li>
-						<li>
-							<LinkCard is="external" href="https://github.com/Graviton-Code-Editor/graviton-sdk">
-								🧵 Graviton SDK
-							</LinkCard>
-						</li>
-						<li>
-							<LinkCard is="external" href="https://github.com/Graviton-Code-Editor/website">
-								🎡 Graviton website 
-							</LinkCard>
-						</li>
-						<li>
-							<LinkCard is="external" href="https://github.com/Graviton-Code-Editor/remote-plugin">
-								🔭 Remote Plugin
+							<LinkCard is="external" href="https://github.com/X-Store-App/client">
+								XStore client
 							</LinkCard>
 						</li>
 					</ul>
-					<p>And many other!</p>
+					<p>And more at <a href="https://github.com/x-store-app">GitHub.</a></p>
 				</div>
 			</HomeLayout>
 		</div>

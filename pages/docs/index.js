@@ -19,24 +19,21 @@ const Docs = () => {
 					<Sidebar/>
 				</div>
 				<div className="container">
-					<DocsTitle>Documentation (WIP)</DocsTitle>
+					<DocsTitle>Documentation</DocsTitle>
 					<div>
 						<div className="markdown-container">
 							<i>NOTE: this docs are updated in accordance with the lastest changes, so, somethings might not work if you target a lower version than the one on the source code.</i>
-							<p>Graviton Editor is a cross-platform code editor made using web technologies.</p>
+							<p>XStore is a cross platform, free and open source AppStore.</p>
 							<h2>Guides</h2>
 							<LinkCard href="docs/dev/guides/building" >
 								👋🏻 Getting Started
 							</LinkCard>
-							<LinkCard href="docs/dev/guides/building" >
-								🤠 Building manually
+							<LinkCard href="docs/dev/guides/getting_started" >
+								🤠 Starting locally
 							</LinkCard>
 							<h2>Fundamentals</h2>
-							<LinkCard href="docs/dev/fundamentals/graviton2" >
-								🧰 .graviton2
-							</LinkCard>
-							<LinkCard href="docs/dev/fundamentals/puffin" >
-								🐧 Puffin
+							<LinkCard href="docs/dev/fundamentals/xstore_directory" >
+								🧰 .xstore
 							</LinkCard>
 						</div>
 						<div className="spacing"/>

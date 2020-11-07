@@ -17,13 +17,13 @@ module.exports = withPlugins([
 	async redirects() {
 		return [
 			{
-				source: '/blog/graviton2_changes/graviton2_changes',
-				destination: '/blog/graviton2_changes',
+				source: '/blog/xstore_changes/xstore_changes',
+				destination: '/blog/xstore_changes',
 				permanent: true,
 			},
 			{
-				source: '/blog/blog/graviton_remake/remake/',
-				destination: '/blog/graviton_remake',
+				source: '/blog/blog/xstore_remake/remake/',
+				destination: '/blog/xstore_remake',
 				permanent: true,
 			},
 			{

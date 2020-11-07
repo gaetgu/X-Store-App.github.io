@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<Component {...pageProps} >
 			<Head>
-				<meta name="description" content="Graviton website"/>
+				<meta name="description" content="XStore website"/>
 			</Head>
 		</Component>
 	)

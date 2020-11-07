@@ -1,9 +1,9 @@
 {
-	"name": "graviton-website",
+	"name": "xstore-website",
 	"version": "1.1.0",
-	"description": "Graviton Editor's website",
+	"description": "XStore's website, originally made by Marc Espín Sanz",
 	"main": "index.js",
-	"author": "Marc Espín Sanz",
+	"author": "XStore",
 	"scripts": {
 		"dev": "next",
 		"build": "npm run dev:tasks && next build",
