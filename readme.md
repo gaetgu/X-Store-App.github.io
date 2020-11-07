@@ -5,7 +5,7 @@ XStore's website
 1. Fork the repo
 2. Clone the repository:
 ```
-git clone https://github.com/<YOUR USERNAME>/website-1.git
+git clone https://github.com/X-Store-App/web.git
 ```
 
 Install dependencies:
