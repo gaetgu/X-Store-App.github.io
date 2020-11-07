@@ -1,6 +1,0 @@
-const { series } = require('gulp')
-const download = require('download-git-repo')
-const path = require('path')
-const { exec } = require('child_process')
-const fs = require('fs-extra')
-const ncp = require('ncp')
