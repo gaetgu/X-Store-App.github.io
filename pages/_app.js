@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
 		<Component {...pageProps} >
 			<Head>
 				<meta name="description" content="XStore website"/>
+				<link rel="icon" type="image/ico" href="/favicon.ico" />
 			</Head>
 		</Component>
 	)
