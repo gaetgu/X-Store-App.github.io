@@ -16,26 +16,7 @@ module.exports = withPlugins([
 	},
 	async redirects() {
 		return [
-			{
-				source: '/blog/xstore_changes/xstore_changes',
-				destination: '/blog/xstore_changes',
-				permanent: true,
-			},
-			{
-				source: '/blog/blog/xstore_remake/remake/',
-				destination: '/blog/xstore_remake',
-				permanent: true,
-			},
-			{
-				source: '/blog/blog/website_revamp/website_revamp/',
-				destination: '/blog/website_revamp',
-				permanent: true,
-			},
-			{
-				source: '/app',
-				destination: '/graviton/index.html',
-				permanent: true,
-			},
+			
 		]
 	},
 })
