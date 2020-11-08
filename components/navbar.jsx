@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styled from '@emotion/styled'
 import { useRouter } from "next/router";
+import Logo from '../public/xstore.png'
 
 const NavBarContainer = styled.div`
 	display: flex;
@@ -65,6 +66,11 @@ function Navbar() {
 	return (
 		<NavBarContainer>
 			<div>
+				<Link href="/">
+					<a className="img">
+						<img alt="XStore Logo" height={50 + "px"} src={Logo}/>
+					</a>
+				</Link>
 				<Link href="/">
 					<a active={router.asPath.split('/')[1] === '' ? 'true' : ''}>Home</a>
 				</Link>

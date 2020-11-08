@@ -6,8 +6,10 @@ import Button from '../components/button.jsx'
 import SecondButton from '../components/second_button.jsx'
 import Head from 'next/head'
 import Link from 'next/link'
+import Logo from '../public/xstore.png'
 
 function Home() {
+	/* TODO: Add sample screenshot of the main client when ready */
 	return (
 		<div style={{height: '100%'}}>
 			<Head>
@@ -17,6 +19,9 @@ function Home() {
 			<HomeLayout>
 				<div className="container">
 					<div className="horizontal">
+						<div className="image">
+							<img alt="XStore Logo" src={Logo}/>
+						</div>
 						<div className="right-text"> 
 							<Title>Made for every person in the world</Title>
 							<p>XStore is an open source, free and cross-platform app store</p>
