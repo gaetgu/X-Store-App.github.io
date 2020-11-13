@@ -9,6 +9,16 @@
 			"slug": "faq"
 		},
 		{
+			"label": "🧓 User guide",
+			"slug": "userguide",
+			"list": [
+				{
+					"label": "🔒 Security",
+					"slug": "userguide/security"
+				}
+			]
+		},
+		{
 			"label": "📢 For publishers",
 			"sluq": "publishers",
 			"list": [
