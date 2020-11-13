@@ -1,6 +1,6 @@
 ---
 title: ⚠️ OSS Duties and responsibilities
-slug: oss-duties-responsibilites
+slug: responsibilites
 date: "7-11-2020"
 description: "OSS duties and responsibilities. Our action."
 ---
