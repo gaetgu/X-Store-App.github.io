@@ -29,7 +29,12 @@ const NavBarContainer = styled.div`
 				margin-left: 5px;
 				text-decoration: none;
 			}
-			& > a:hover, & > a:focus {
+			& > a:hover {
+				background-color: #ff00b1d6;
+				text-decoration: underline white;
+				outline: none;
+			}
+			& > a:focus {
 				background-color: #444444;
 				text-decoration: underline white;
 			}

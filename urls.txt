@@ -1,0 +1,3 @@
+https://api.github.com/orgs/X-Store-App
+https://api.github.com/repos/X-Store-App/client/releases
+https://api.github.com/orgs/X-Store-App/repos

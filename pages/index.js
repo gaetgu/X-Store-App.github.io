@@ -3,6 +3,7 @@ import HomeLayout from '../components/home.layout.jsx'
 import Title from '../components/title.jsx'
 import Footer from '../components/footer.jsx'
 import Button from '../components/button.jsx'
+import HomeNav from '../components/homenav'
 import SecondButton from '../components/second_button.jsx'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -17,7 +18,12 @@ function Home() {
 			</Head>
 			<Navbar/>
 			<HomeLayout>
-				
+				<HomeNav Left={<div>
+
+				</div>} Right={<div style={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
+					<Title>XStore. 100% free and OSS AppStore</Title>
+					<Button>DOWNLOAD</Button> <Button>USE BROWSER VERSION</Button>
+				</div>}/>
 			</HomeLayout>
 		</div>
 	)
