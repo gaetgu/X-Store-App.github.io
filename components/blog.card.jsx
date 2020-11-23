@@ -8,16 +8,18 @@ const BlogCard = styled.div`
 	transition: 0.25s;
 	margin: 0 10px;
 	display: block;
+	background-color: #333333;
 	& * {
 		font-size: 12px;
 	}
 	& h2 {
 		font-weight: bold;
 		font-size: 15px;
+		color: white;
 	}
 	& :hover {
-		background: rgb(252, 252, 252);
-		box-shadow: 0px 1px 7px rgba(0,0,0, 0.17);
+		background: #444444;
+		box-shadow: 0px 5px 7px rgba(0,0,0, 0.17);
 		transition: 0.12s;
 	}
 	.date{
