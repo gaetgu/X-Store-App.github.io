@@ -5,7 +5,7 @@ const Button = styled.button`
 	background: #ff00b1ff;
 	border: 0;
 	color: white;
-	border-radius: 6px;
+	border-radius: 0px;
 	cursor: pointer;
 	transition: 0.1s;
 	margin: 1px;
