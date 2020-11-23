@@ -4,60 +4,35 @@ import { useRouter } from "next/router";
 import Logo from '../public/xstore.png'
 
 const NavBarContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	min-width: 90%;
-	padding: 20px 15px;
-	padding-bottom: 10px;
+	width: 100%;
+	height: 70px !important;
+	border-bottom: 1px solid white;
+	background-color: #121212;
 	& > div {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: auto;
-		min-width: 100px;
-		width: 100%;
-		max-width: 600px;
-		padding: 25px;
-		border-bottom: 1px solid rgb(180,180,180);
-		& > * {
-			display: inline-block;
-			max-width: 100px;
-			padding: 0px 15px;
-			margin-bottom: 5px;
-			text-decoration: none;
-			color: rgb(75,75,75);
-			font-size: 16px;
-			font-weight: 500;
-			outline: 0;
-			font-family: 'Fira Sans', sans-serif;
-			white-space: nowrap;
-			margin: 0;
-			margin-bottom: 5px;
-			&[active="true"]{
-				color: black;
+		justify-content: space-between;
+		align-content: center;
+		flex-direction: row;
+		min-height: 70px;
+		padding: 10px;
+		& > section {
+			width: auto;
+			display: flex;
+			flex-direction: row;
+			align-content: center;
+			height: 100%;
+			& > a {
+				color: white;
+				background-color: #222222;
+				padding: 10px 5px;
+				margin-left: 5px;
+				text-decoration: none;
 			}
-			&[active=""]:hover {
-				color: gray;
-			}
-			&.img{
-				margin-bottom: 0px;
-				margin-right: 75px;
-				@media only screen and (max-width: 600px) {
-					margin-right: 0px;
-					margin-left: 150px;
-				}
-				& > img {
-					cursor: pointer;
-					max-width: 100px;
-					@media only screen and (max-width: 600px) {
-						max-width: 60px;
-					}
-				}
+			& > a:hover {
+				background-color: #444444;
+				text-decoration:
 			}
 		}
-	}
-	& > div:nth-child(2) {
-		flex-direction: flex-end;
 	}
 `
 
@@ -68,21 +43,23 @@ function Navbar() {
 			<div>
 				<Link href="/">
 					<a className="img">
-						<img alt="XStore Logo" height={50 + "px"} src={Logo}/>
+						<img alt="XStore Logo" height={50 + "px"} src={Logo} style={{transform: 'scale(1.4, 1.4)'}}/>
 					</a>
 				</Link>
-				<Link href="/">
-					<a active={router.asPath.split('/')[1] === '' ? 'true' : ''}>Home</a>
-				</Link>
-				<Link href="/blog">
-					<a active={router.asPath.split('/')[1] === 'blog' ? 'true' : ''}>Blog</a>
-				</Link>
-				<Link href="/docs" >
-					<a active={router.asPath.split('/')[1] === 'docs' ? 'true' : ''}>Docs</a>
-				</Link>
-				<Link href="/about" >
-					<a active={router.asPath.split('/')[1] === 'about' ? 'true' : ''}>About</a>
-				</Link>
+				<section>
+					<Link href="/">
+						<a active={router.asPath.split('/')[1] === '' ? 'true' : ''}>Home</a>
+					</Link>
+					<Link href="/blog">
+						<a active={router.asPath.split('/')[1] === 'blog' ? 'true' : ''}>Blog</a>
+					</Link>
+					<Link href="/docs" >
+						<a active={router.asPath.split('/')[1] === 'docs' ? 'true' : ''}>Docs</a>
+					</Link>
+					<Link href="/about" >
+						<a active={router.asPath.split('/')[1] === 'about' ? 'true' : ''}>About</a>
+					</Link>
+				</section>
 			</div>
 		</NavBarContainer>
 	)
