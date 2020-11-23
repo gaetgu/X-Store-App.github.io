@@ -12,8 +12,9 @@ const NavBarContainer = styled.div`
 		display: flex;
 		justify-content: space-between;
 		align-content: center;
+		align-items: center;
 		flex-direction: row;
-		min-height: 70px;
+		min-height: 20px;
 		padding: 10px;
 		& > section {
 			width: auto;
