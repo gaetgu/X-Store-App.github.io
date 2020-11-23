@@ -22,7 +22,7 @@ function Home() {
 
 				</div>} Right={<div style={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
 					<Title>XStore. 100% free and OSS AppStore</Title>
-					<Button>DOWNLOAD</Button> <Button>USE BROWSER VERSION</Button>
+					<Link href="/download"><Button>DOWNLOAD</Button></Link> <Link href="/browser"><Button>USE BROWSER VERSION</Button></Link>
 				</div>}/>
 			</HomeLayout>
 		</div>
