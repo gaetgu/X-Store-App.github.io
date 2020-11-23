@@ -1,5 +1,9 @@
+@font-face {
+	font-family: 'Selawik', sans-serif;
+	src: url('../public/selawkl.ttf');
+}
 body * {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Selawik', sans-serif !important;
 }
 body {
 	margin: 0;
