@@ -31,6 +31,26 @@
 					"slug": "publishers/cli"
 				}
 			]
+		},
+		{
+			"label": "\uD83D\uDD28 For developers",
+			"slug": "developers",
+			"list": [
+				{
+					"label": "➜ API REST",
+					"slug": "developers/rest",
+					"list": [
+						{
+							"label": "\uD83D\uDC49 Routes",
+							"slug": "developers/rest/routes"
+						},
+						{
+							"label": "\uD83D\uDC49 Headers",
+							"slug": "developers/rest/headers"
+						}
+					]
+				}
+			]
 		}
 	]
 }
