@@ -22,19 +22,9 @@ const Docs = () => {
 					<DocsTitle>Documentation</DocsTitle>
 					<div>
 						<div className="markdown-container">
-							<i>NOTE: this docs are updated in accordance with the lastest changes, so, somethings might not work if you target a lower version than the one on the source code.</i>
 							<p>XStore is a cross platform, free and open source AppStore.</p>
 							<h2>Guides</h2>
-							<LinkCard href="docs/dev/guides/building" >
-								👋🏻 Getting Started
-							</LinkCard>
-							<LinkCard href="docs/dev/guides/getting_started" >
-								🤠 Starting locally
-							</LinkCard>
-							<h2>Fundamentals</h2>
-							<LinkCard href="docs/dev/fundamentals/xstore_directory" >
-								🧰 .xstore
-							</LinkCard>
+							<i>Under development</i>
 						</div>
 						<div className="spacing"/>
 					</div>
