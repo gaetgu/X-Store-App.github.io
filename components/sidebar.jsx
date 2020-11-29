@@ -39,12 +39,14 @@ const SidebarContainer = styled.div`
 		}
 	}
 	& > div {
-		background: white;
+		background: #121212;
 		box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
 		padding: 20px;
 		border-radius: 8px;
 		overflow: auto;
 		& input {
+			color: white;
+			background: #000;
 			max-width: 100%;
 			padding: 9px;
 			border: 0;
@@ -68,7 +70,7 @@ const SidebarContainer = styled.div`
 				border-radius: 6px;
 				border: none;
 				font-size: 12px;
-				color: rgb(50,50,50);
+				color: white;
 				padding:  6px 8px;
 				background: transparent;
 				outline: 0;
@@ -79,11 +81,15 @@ const SidebarContainer = styled.div`
 					height: 6px;
 					width: 20px;
 					transition: transform ease-out 0.07s;
+					filter: invert(1);
 					&.displayed{
 						transform: rotate(0deg);
 					}
 					&.hidden{
 						transform: rotate(-90deg);
+					}
+					:hover, :focus, :active {
+						filter: invert(0);
 					}
 				}
 				&:hover{
