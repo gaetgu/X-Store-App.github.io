@@ -14,9 +14,4 @@ module.exports = withPlugins([
 		}
 		return config
 	},
-	async redirects() {
-		return [
-			
-		]
-	},
 })
