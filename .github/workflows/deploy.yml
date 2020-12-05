@@ -10,5 +10,4 @@ jobs:
 
     steps:
       - name: Install go
-        uses: actions/checkout@v2
         run: sudo apt install node -y && npm run deploy
