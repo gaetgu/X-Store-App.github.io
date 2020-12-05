@@ -11,22 +11,4 @@ jobs:
     steps:
       - name: Install go
         uses: actions/checkout@v2
-        run: sudo apt install node -y
-  build:
-    name: Exporting website to static
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        run: npm i && rm .next -rf && npm run export
-  publish:
-    name: Deployment to GH_PAGES branch
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Publish via gh-pages
-        uses: actions/checkout@v2
-        run: |
-        npm i gh-pages -D &&
-        gh-pages -d out
+        run: sudo apt install node -y && npm run deploy
