@@ -3,10 +3,12 @@ name: Deployment to GH pages
 on: push
 
 jobs:
-  install:
-    name: Install dependencies to current machine (Ubuntu)
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install Node
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deployment
         run: npm run deploy
