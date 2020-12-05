@@ -1,7 +1,6 @@
 name: Deployment to GH pages
 
 on: push
-branches: [main]
 
 jobs:
   install:
