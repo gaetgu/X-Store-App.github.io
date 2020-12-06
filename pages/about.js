@@ -13,22 +13,22 @@ function About() {
 			<HomeLayout>
 				<div style={{padding: 15}}>
 					<h1>About</h1>
-					<p><b>XStore</b> is not just a store. It is a cross platform store, free and open source made by everyone and for everyone. I have made a full ecosystem for all you:</p>
+					<p><b>XStore</b> is not just a store. It is a cross platform store, free and open source made by everyone and for everyone. XStore respects every developer's vision and is completely free. It is very documented and you can find its docs <a href="/docs">here</a>.</p>
+					<h2>Open Source Repositories</h2>
 					<ul style={{
 							listStyleType: 'none',
 							margin: 0,
 							padding: 0
 						}}>
 						<li>
-							<LinkCard is="external" href="https://github.com/X-Store-App/backend">
-								XStore backend
+							<LinkCard is="external" href="https://github.com/X-Store-App">
+								XStore's GitHub organization
 							</LinkCard>
-							<LinkCard is="external" href="https://github.com/X-Store-App/client">
-								XStore client
+							<LinkCard is="external" href="https://gitlab.com/X-Store-App/">
+								XStore's GitLab organization
 							</LinkCard>
 						</li>
 					</ul>
-					<p>And more at <a href="https://github.com/x-store-app">GitHub.</a></p>
 					<p><i>This website was created by <a href="https://github.com/marc2332">Marc Espín Sanz</a> for Graviton. Check it <a href="https://github.com/Graviton-Code-Editor/website">here.</a></i></p>
 				</div>
 			</HomeLayout>
