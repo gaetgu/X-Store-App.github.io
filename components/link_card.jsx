@@ -6,6 +6,7 @@ const LinkCard = styled.div`
 	border-radius: 11px;
 	box-shadow: 0px 1px 5px rgba(0,0,0, 0.1);
 	margin: 7px;
+	background: white;
 	max-width: auto;
 	display: inline-block;
 	cursor: pointer;
