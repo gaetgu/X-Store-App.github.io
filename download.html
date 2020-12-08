@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> -->
+    <!-- Local CSS file -->
+    <link rel="stylesheet" href="main.css">
+    <title>XStore Website</title>
+</head>
+<body>
+
+
+    <!--=====================================
+    =                NavBar                 =
+    ======================================-->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <!-- Logo -->
+        <a href="/" class="navbar-brand">
+            <img src="https://x-store-app.github.io/_next/static/images/xstore-dc99416b74f9fdd3e4fa76a8096ff1f0.png" alt="XStore" width="40">
+        </a>
+
+        <!-- Collapse Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsable Content -->
+        <div class="collapse navbar-collapse">
+
+            <!-- Navbar Items -->
+            <ul class="navbar-nav mr-auto">
+                
+                <!-- Home -->
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home
+                    </a>
+                </li>
+
+                <!-- Features -->
+                <li class="nav-item">
+                    <a class="nav-link" href="./features.html">Features
+                    </a>
+                </li>
+
+                <!-- Pricing (free!) -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="./download.html">Download
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+          
+              </ul>
+
+        </div>
+
+    </nav>
+    
+    <!--=======  End of NavBar   ========-->
+
+
+    <!--=====================================
+    =                Main Body              =
+    ======================================-->
+    
+    <h1 class="text-center" id="xstore-header">
+        <strong>
+            Download
+        </strong>
+    </h1>
+
+    <hr>
+
+    <!-- Download Cards -->
+    <div class="text-center">
+
+        <!-- Web (beta) -->
+        <div class="card">  
+            <div class="card-header">
+                <h3>Web (beta)</h3>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Use XStore on the web! No downloads required!
+                </p>
+
+                <button class="btn btn-light">Go to web</button>
+            </div>
+        </div>
+
+        <!-- Desktop -->
+        <div class="card">  
+            <div class="card-header">
+                <h3>Desktop</h3>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Download a <span id="fileType"></span> file for <span id="osName"></span>
+                </p>
+
+                <button class="btn btn-light">Download for Desktop</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <!--=======  End of Main Body  ========-->
+
+
+    <!--=====================================
+    =                Scripts                =
+    ======================================-->
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    
+    <!-- Figure out which OS the user is on -->
+    <script>
+        const getOS = fileType => {
+            let userAgent = window.navigator.userAgent
+            let platform = window.navigator.platform
+
+            // some of the are pretty outdated!
+            let macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K']
+            let windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE']
+            let iosPlatforms = ['iPhone', 'iPad', 'iPod']
+
+            let os = null
+
+            // Logic!
+
+            if (fileType) {
+                // if the platform is in the macOS list
+                if (macosPlatforms.indexOf(platform) !== -1) {
+                    os = ".dmg"
+
+                // if the platform is in the iOS list
+                } else if (iosPlatforms.indexOf(platform) !== -1) {
+                    os = "for iOS"
+
+                // if the platform is in the Windows list
+                } else if (windowsPlatforms.indexOf(platform) !== -1) {
+                    os = ".exe"
+
+                // if it isn't any of those, it must be linux.
+                } else if (!os && /Linux/.test(platform)) {
+                    os = ".deb"
+                }
+            } else {
+                // if the platform is in the macOS list
+                if (macosPlatforms.indexOf(platform) !== -1) {
+                    os = "macOS"
+
+                // if the platform is in the iOS list
+                } else if (iosPlatforms.indexOf(platform) !== -1) {
+                    os = "iOS"
+
+                // if the platform is in the Windows list
+                } else if (windowsPlatforms.indexOf(platform) !== -1) {
+                    os = "Windows"
+
+                // if it isn't any of those, it must be linux.
+                } else if (!os && /Linux/.test(platform)) {
+                    os = "Linux"
+                }
+            }
+
+            return os
+        }
+
+        document.getElementById("osName").innerHTML = getOS(false)
+        document.getElementById("fileType").innerHTML = getOS(true)
+    </script>
+
+    <!--=======  End of Scripts  ========-->
+</body>
+</html>
